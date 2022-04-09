@@ -1,0 +1,23 @@
+{
+    "name": "Background Modifier",
+    "description": "Modifies the background of the webpage to be whatever color you want. \n\nBy default, the background is not modified. \nNote that you have to reload the webpage for it to work.",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": ["storage", "webNavigation", "scripting"],
+    "host_permissions": [
+        "https://*/*",
+        "http://*/*"
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "128": "./icon.png"
+        }
+    },
+    "icons": {
+        "128": "./icon.png"
+    }
+}
