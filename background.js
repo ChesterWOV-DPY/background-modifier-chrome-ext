@@ -13,6 +13,6 @@ chrome.webNavigation.onCompleted.addListener(({ tabId, frameId }) => {
 const newPageLoad = async () => {
     let { bg } = await chrome.storage.sync.get("bg");
     const STYLE = document.createElement("style");
-    STYLE.innerText = `body { background: ${bg} !important; }`;
+    STYLE.innerText = `* { background-color: ${bg} !important; } body { background-color: ${bg} !important; }`;
     document.head.appendChild(STYLE);
 }

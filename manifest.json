@@ -1,7 +1,7 @@
 {
     "name": "Background Modifier",
     "description": "Modifies the background of the webpage to be whatever color you want. \n\nBy default, the background is not modified. \nNote that you have to reload the webpage for it to work.",
-    "version": "1.0",
+    "version": "2.0",
     "manifest_version": 3,
     "background": {
         "service_worker": "background.js"
